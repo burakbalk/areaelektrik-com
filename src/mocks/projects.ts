@@ -1,0 +1,165 @@
+export interface Project {
+  id: number;
+  title: string;
+  category: string;
+  location: string;
+  description: string;
+  images: string[];
+  year: string;
+}
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    title: 'Kuruçay Grup – KNX Akıllı Konut Projesi',
+    category: 'Akıllı Bina',
+    location: 'Kuşadası / Davutlar, Aydın',
+    description: 'Kuruçay Grup iş birliğiyle Kuşadası Davutlar\'da 54 daire ve 12 villadan oluşan projede Full EAE KNX otomasyon sistemi, zayıf akım tesisatları, yapay göl ve 13 yüzme havuzunun tüm elektrik altyapısı anahtar teslim olarak hayata geçirildi.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQGkpw7x3oOxEQ/feedshare-shrink_800/B4DZtnTR8NKoAg-/0/1766964669465?e=1778716800&v=beta&t=bcUgUKXUntUm0RfSDyz1woUyUqoiCyJ8LgimY-uCh0k',
+      'https://media.licdn.com/dms/image/v2/D4D22AQH9ewVLeRz5LQ/feedshare-shrink_800/B4DZtnTR9GK0Ag-/0/1766964669391?e=1778716800&v=beta&t=2VWHaiTjRwErD_564YLG9BdwY94L8HVdr20mn46a8fA',
+      'https://media.licdn.com/dms/image/v2/D4D22AQGoL8XRUNcxcQ/feedshare-shrink_800/B4DZtnTR.TI4Ag-/0/1766964670315?e=1778716800&v=beta&t=hLHrSxC58u8jQTy7BChiWAwxToiRttMS9lCkSk9fYVQ',
+      'https://media.licdn.com/dms/image/v2/D4D22AQHotX3djehxLg/feedshare-shrink_800/B4DZtnTR90KYAg-/0/1766964669763?e=1778716800&v=beta&t=e-Q59ufxEnoLePttwykSOcbj5guxcpMsfvOOYCtYVXk',
+    ],
+    year: '2025',
+  },
+  {
+    id: 2,
+    title: 'MSB Askeri Yerleşke – Elektrik Taahhüt',
+    category: 'Kamu / Savunma',
+    location: 'Urla / Çeşmealtı, İzmir',
+    description: 'Milli Savunma Bakanlığı\'na ait askeri yerleşkede trafo pedestal montajı, OG–AG trafo kurulumu, bara ve kablo bağlantıları ile pano sistem entegrasyonu teknik şartnameler doğrultusunda başarıyla tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQFI3muhiuO7EQ/feedshare-shrink_800/B4DZtnQFtaIAAk-/0/1766963833541?e=1778716800&v=beta&t=oILs2mObtXvOsLxpj-Rdirp_8Kecf5lebKznLXAZyPs',
+      'https://media.licdn.com/dms/image/v2/D4D22AQE_M9JZyzZt6g/feedshare-shrink_800/B4DZtnQFukGgAg-/0/1766963833625?e=1778716800&v=beta&t=i6GIVNTq-P9t5CmV3Rs-9rH5VgNHTY1nbCixDkWdeIc',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFl2SK19CRQBw/feedshare-shrink_800/B4DZtnQFtiKQAk-/0/1766963833520?e=1778716800&v=beta&t=gALzR0F1YmA-UTm3oSXOQvKkgKOqrGnOCNLqQz1pkf0',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFLoE8oOGjoxg/feedshare-shrink_800/B4DZtnQFtmKAAg-/0/1766963833026?e=1778716800&v=beta&t=1yM_ZUkaJ8U250Fl898AEkLm2kJNmHqjcyJPvKOedjI',
+    ],
+    year: '2025',
+  },
+  {
+    id: 3,
+    title: 'Emlak Yapı Bayraklı – Söğüt İnşaat Konut Projesi',
+    category: 'Konut',
+    location: 'Bayraklı, İzmir',
+    description: 'Söğüt İnşaat iş birliğiyle Bayraklı 70 ada / 423–425–428 parsellerinde 3 bina, 8\'er katlı ve toplam 2+1 ve 3+1 konutlardan oluşan projenin tüm elektrik taahhüt, kablolama, armatür, pano ve altyapı montaj süreçleri eksiksiz tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQECh9Xnu5-iew/feedshare-shrink_800/B4DZq7Na0pHwAg-/0/1764077458999?e=1778716800&v=beta&t=mthjrVvLhNtY86MFYHKgOepPDXytd6FMJpQphulGBVc',
+      'https://media.licdn.com/dms/image/v2/D4D22AQGyWi46VWn9SA/feedshare-shrink_800/B4DZq7Na1cH4Ag-/0/1764077457005?e=1778716800&v=beta&t=HfOpO_zXt2Q7gDJMoCDIbHRlsH0evObtj6elBArB2Uo',
+      'https://media.licdn.com/dms/image/v2/D4D22AQF60Iv4jlaDyA/feedshare-shrink_800/B4DZq7Na0xHsAo-/0/1764077458803?e=1778716800&v=beta&t=NyEExIt5RLYgGJb7LjdG8j497Os5mOkawUGpSWhEhO4',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFCnTUc9NUIag/feedshare-shrink_800/B4DZq7Na2HKQAk-/0/1764077459978?e=1778716800&v=beta&t=SA82OmSjo0SanEqySSVKSQseD9i-BCsHiDQdMucR0Wo',
+    ],
+    year: '2025',
+  },
+  {
+    id: 4,
+    title: 'Velux Konak – Elektrik Altyapı & Mobilizasyon',
+    category: 'Ticari',
+    location: 'Konak, İzmir',
+    description: 'Velux Konak projesinde mobilizasyon ve saha hazırlık süreçleriyle başlayan çalışmalarda elektrik altyapı planlaması, şantiye geçici enerji çözümleri, malzeme organizasyonu ve sahada uygulama koordinasyonu profesyonel şekilde yürütülmektedir.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQHLWafrLk9_aw/feedshare-shrink_800/B4DZpY.3neIAAg-/0/1762429470574?e=1778716800&v=beta&t=2ZlyC-yEaTRz2Tyf0A7dL2lTJSea5OZk_z0AI09eFjc',
+      'https://media.licdn.com/dms/image/v2/D4D22AQHA4wx1RLDS1w/feedshare-shrink_800/B4DZpY.3nWKUAg-/0/1762429469943?e=1778716800&v=beta&t=POrvkcKAbkgxAniJW-J60JuZQUtz0d2sVsJ_SbGFRjE',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFa1f5w53aVrg/feedshare-shrink_800/B4DZpY.3mjKUAg-/0/1762429470764?e=1778716800&v=beta&t=4x0RleKmTZN1ebHgpiNeLnyBmXk0SxFLi2fzyIQrF2k',
+    ],
+    year: '2025',
+  },
+  {
+    id: 5,
+    title: 'Urla Çeşmealtı Askeri Bölge – Enerji Altyapısı',
+    category: 'Kamu / Savunma',
+    location: 'Urla / Çeşmealtı, İzmir',
+    description: 'Urla Çeşmealtı askeri bölgesinde elektrik odası ve pano sistemleri, jeneratör ve motor bağlantıları, yer altı kablo tavası uygulamaları ve aydınlatma direği montajları mühendislik disipliniyle titizlikle yürütüldü.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQEWMaqYokxWUw/feedshare-shrink_800/B4DZnyFIaGKoAk-/0/1760703108665?e=1778716800&v=beta&t=ugyUeh5ckB-iLG5X567BEDzhBiuRFdKdQwvrhbZ7DdQ',
+      'https://media.licdn.com/dms/image/v2/D4D22AQGHZFrROM3EYQ/feedshare-shrink_800/B4DZnyFIa.H4Ag-/0/1760703103881?e=1778716800&v=beta&t=nG5dAdLF0kZcR15vg2LZZvUKwtpR7NHiA9Y7jFTKY70',
+      'https://media.licdn.com/dms/image/v2/D4D22AQGEzCSme-gDUQ/feedshare-shrink_800/B4DZnyFIb0GkAg-/0/1760703102796?e=1778716800&v=beta&t=lhOXiEA9UFVTYzJ2P3Cicn6R3638MmtlFrb9xXS-keg',
+      'https://media.licdn.com/dms/image/v2/D4D22AQF7ZcUHxT4KdQ/feedshare-shrink_800/B4DZnyFIc0JEAg-/0/1760703102135?e=1778716800&v=beta&t=WRinKF48b_N-dRlE8VmVZHHzhy-CxBBk8LbIDxiENdk',
+    ],
+    year: '2025',
+  },
+  {
+    id: 6,
+    title: 'Organize Sanayi Bölgesi – Topraklama Sistemi',
+    category: 'Endüstriyel',
+    location: 'Organize Sanayi Bölgesi, İzmir',
+    description: 'Organize sanayi bölgesinde temel topraklama çalışmaları; güvenli enerjinin temeli olan doğru topraklama standartlarına göre, mühendislik disiplini ve titiz işçilikle hayata geçirildi.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQGzhOOX1eAXfQ/feedshare-shrink_800/B4DZnx.VRSH4Ag-/0/1760701302826?e=1778716800&v=beta&t=ogudKHhJXF_XUPNx2utQ2XFq6vA1yxYwYgs_b78v9zM',
+      'https://media.licdn.com/dms/image/v2/D4D22AQEJlpBf1jHRSg/feedshare-shrink_800/B4DZnx.VQ6KQAg-/0/1760701302877?e=1778716800&v=beta&t=9q236onO6vSOQ41x8jus6wu3ZRwFZOhiiXpQkvoKrE8',
+      'https://media.licdn.com/dms/image/v2/D4D22AQEJ47NfUozbVw/feedshare-shrink_800/B4DZnx.VQxGsAg-/0/1760701291241?e=1778716800&v=beta&t=GcBqP1M5uMvKqLFXTZzX3QPX9NZl9Qa8pfrv9_fkcSg',
+      'https://media.licdn.com/dms/image/v2/D4D22AQGR74PzN5xZ2w/feedshare-shrink_800/B4DZnx.VQwIgAg-/0/1760701294027?e=1778716800&v=beta&t=k94gqe9r1R9ur6S4khJRiL5TA6KOYGzTYlCiDo71X1o',
+    ],
+    year: '2025',
+  },
+  {
+    id: 7,
+    title: 'GES Menderes – 12.5 kW Off-Grid Güneş Enerjisi',
+    category: 'Yenilenebilir Enerji',
+    location: 'Menderes, İzmir',
+    description: 'İzmir Menderes\'te 12,5 kW off-grid güneş enerjisi sistemi kurulumu başarıyla tamamlandı. Sistem, talep halinde 16 kW akü ve panel takviyesi yapılabilecek şekilde tasarlanarak mühendislik hesaplamaları ve profesyonel montaj işçiliğiyle devreye alındı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQGPDVaSAltrPA/feedshare-shrink_1280/B4DZitWSM.GQAk-/0/1755254958967?e=1778716800&v=beta&t=el6btRAteMnJclU20AOpuyfmlPVdqDxk4LyTfukzAJg',
+      'https://media.licdn.com/dms/image/v2/D4D22AQHFTBa1MBtEOg/feedshare-shrink_2048_1536/B4DZitWSNaHwAo-/0/1755254959143?e=1778716800&v=beta&t=_ELPME5afdA9zcIUOqzA3ZB9WkrT7e27SnOEefEr7_s',
+    ],
+    year: '2025',
+  },
+  {
+    id: 8,
+    title: 'Brownies Food & Co. – Gıda Üretim Tesisi',
+    category: 'Ticari / Gıda',
+    location: 'Kemalpaşa, İzmir',
+    description: 'Türkiye\'nin lider brownie üreticisi Brownies Food & Co.\'nun Kemalpaşa üretim tesisinin tüm elektrik altyapısı; kuvvetli ve zayıf akım sistemleri, aydınlatma ve enerji altyapısı tasarımdan devreye almaya kadar anahtar teslim tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQHe_zToGtlbFQ/feedshare-shrink_800/B4DZafZr8_G8Ag-/0/1746431037941?e=1778716800&v=beta&t=zYNnAKwUmN8xl5EXYl0-k4stZCUcP-s5qt4w4mWRF-Q',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFFVcoUni4INA/feedshare-shrink_800/B4DZafZr9HGwAg-/0/1746431039672?e=1778716800&v=beta&t=FLgmNUcWd6KRJiVeVM671mDqL8eYgt6lxFMm0enh2NQ',
+    ],
+    year: '2025',
+  },
+  {
+    id: 9,
+    title: 'Antiochia Künefe – Restoran Elektrik & Aydınlatma',
+    category: 'Ticari / Restoran',
+    location: 'Bayraklı, İzmir',
+    description: 'İzmir Bayraklı\'da açılan Antiochia Künefe şubesinin kuvvetli ve zayıf akım sistemleri, elektrik altyapısı, aydınlatma projelendirme ve uygulama süreçleri anahtar teslim olarak tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQFZhEt21_xL2g/feedshare-shrink_800/B4DZafOer3GsAg-/0/1746428097909?e=1778716800&v=beta&t=BmgUh9JIXESqhEeKiaTNDdTA8hP7Rc7J-cBFXoKKuNg',
+      'https://media.licdn.com/dms/image/v2/D4D22AQH-5L5cMMmlMA/feedshare-shrink_800/B4DZafOerIGcAk-/0/1746428098534?e=1778716800&v=beta&t=b7YEM7MNDwAM0T9yOfxiMP2KOkD_ApQYsteIEebevto',
+    ],
+    year: '2025',
+  },
+  {
+    id: 10,
+    title: 'Ege Fren Sanayi – Üretim Tesisi Elektrik Projesi',
+    category: 'Endüstriyel / Otomotiv',
+    location: 'İzmir',
+    description: 'Otomotiv sektörünün öncü kuruluşu Ege Fren Sanayi\'nin üretim tesisinde üretim alanı, kalite kontrol birimi ve ofis elektrik tesisatları, busbar sistemleri kurulumu ile devreye alma işlemleri anahtar teslim tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQGazBjIsVVNQQ/feedshare-shrink_800/B4DZafAo2OHQAg-/0/1746424470758?e=1778716800&v=beta&t=yq8XfJ9Vf_dmPv3QMGFFeQDMZO_ZS6mORwDjTLQ_WgE',
+      'https://media.licdn.com/dms/image/v2/D4D22AQHsm_cLwHYrtg/feedshare-shrink_800/B4DZafAo2JGcAk-/0/1746424470770?e=1778716800&v=beta&t=vi1hb84nAcg2Cm_L_iw1R8LRW--GilgguI4oKMbwWNU',
+    ],
+    year: '2025',
+  },
+  {
+    id: 11,
+    title: 'Eryem Jersey-1 Çiftlik Tesisi',
+    category: 'Tarım / Endüstriyel',
+    location: 'İzmir',
+    description: 'Eryem Sanayi ile sürdürülen güçlü iş birliğinin yeni adımı olarak 5.000 büyükbaş kapasiteli Jersey-1 çiftliğinin tüm elektrik mühendisliği, taahhüt ve tesisat süreçleri; projelendirme, saha uygulama ve devreye alma dahil anahtar teslim tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQEMGwKFIzZSmA/feedshare-shrink_800/B4DZav6QMcHsAg-/0/1746708009172?e=1778716800&v=beta&t=OV0ysnAtXryKKhi7Jc0X3MHd6D4bluBzeWPslrC1C0E',
+    ],
+    year: '2025',
+  },
+  {
+    id: 12,
+    title: 'CMS Jant Çiğli – Üretim Tesisi Elektrik Projesi',
+    category: 'Endüstriyel / Otomotiv',
+    location: 'Çiğli, İzmir',
+    description: 'Global ölçekteki otomotiv lideri CMS Jant\'ın Çiğli üretim tesisinde elektrik mühendisliği ve projelendirme, elektrik taahhüt ve tesisat, busbar bakım ve uygulamaları yüksek kalite standartlarında anahtar teslim tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQFf_y-El3wBzw/feedshare-shrink_800/B4DZavFLymG8Ak-/0/1746694097883?e=1778716800&v=beta&t=A3yXotCmKy0lBq8w8QFwZHk-gElJ3sArDRtYmCOwT_M',
+    ],
+    year: '2025',
+  },
+];
