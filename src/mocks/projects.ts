@@ -413,4 +413,15 @@ export const projects: Project[] = [
     ],
     year: '2022',
   },
+  {
+    id: 32,
+    title: 'Cirque Dondurma – Çeşme Marina Anahtar Teslim',
+    category: 'Ticari / Gıda',
+    location: 'Çeşme Marina, İzmir',
+    description: 'Çeşme Marina\'da premium dondurma markası Cirque\'nin mekânının tüm elektrik altyapısı, kuvvetli ve zayıf akım sistemleri, aydınlatma projelendirme ve uygulama süreçleri anahtar teslim olarak tamamlandı.',
+    images: [
+      '/projects/cirque-cesme-marina.jpeg',
+    ],
+    year: '2025',
+  },
 ];
