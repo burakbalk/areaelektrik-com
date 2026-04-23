@@ -170,6 +170,8 @@ export const projects: Project[] = [
     description: 'T.C. Adalet Bakanlığı Adli Tıp Kurumu\'nun İzmir Buca-Şirinyer\'deki binasında elektrik altyapısı, taahhüt, tesisat ve yüksek güvenlikli IP kamera sistemi anahtar teslim tamamlandı. Yapay zeka destekli görüntüleme, 60 m gece görüşlü ve IP67 korumalı HIKVISION kameralar ile 4K NVR kayıt sistemi uygulandı.',
     images: [
       'https://media.licdn.com/dms/image/v2/D5622AQFhKFQVrDaDjA/feedshare-shrink_800/B56ZcdnpKzHoAg-/0/1748548622399?e=1778716800&v=beta&t=V8plbTHeroA0V3mFbfP-8h7frYSCasd78um_eicHgYw',
+      'https://media.licdn.com/dms/image/v2/D5605AQG8Y8TChvo7Jw/videocover-high/B56ZcdnYoMHEBw-/0/1748548564731?e=1777546800&v=beta&t=kA676t7TlvebBVulnECCLHfXR_e_QggpbpEe6eHLJJw',
+      'https://media.licdn.com/dms/image/v2/D4D05AQFKRBk0BjkoAg/feedshare-thumbnail_720_1280/B4DZYtZg2sHIA8-/0/1744518386254?e=1777546800&v=beta&t=DMEIfIx9hbv-3wzOXtVr7dUiFzvP4ghpgbuMaDrDbHQ',
     ],
     year: '2025',
   },
@@ -227,7 +229,7 @@ export const projects: Project[] = [
     location: 'Urla, İzmir',
     description: 'Urla\'da hayata geçirilen özel villa projesinin elektrik tesisatı; akıllı ev sistemleri, güvenli altyapı ve estetik entegrasyon gözetilerek titizlikle yürütüldü. Proje sözleşmeli gizlilik kapsamında tamamlanmış olup konfor, güvenlik ve mühendislik kalitesini bir arada sunan modern yaşam alanı elektrik altyapısını kapsamaktadır.',
     images: [
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop&auto=format&fm=webp',
+      'https://media.licdn.com/dms/image/v2/D4D05AQE2-tr6eEYcyw/feedshare-thumbnail_720_1280/B4DZZqz33uH4A0-/0/1745548706296?e=1777546800&v=beta&t=tmMio7J1EANi4kYaTXg2smZA0amKHb56YJ1pB8QM17w',
     ],
     year: '2025',
   },
