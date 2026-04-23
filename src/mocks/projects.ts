@@ -162,4 +162,51 @@ export const projects: Project[] = [
     ],
     year: '2025',
   },
+  {
+    id: 13,
+    title: 'T.C. Adalet Bakanlığı Adli Tıp Kurumu – Elektrik & Güvenlik Sistemi',
+    category: 'Kamu / Adalet',
+    location: 'Buca / Şirinyer, İzmir',
+    description: 'T.C. Adalet Bakanlığı Adli Tıp Kurumu\'nun İzmir Buca-Şirinyer\'deki binasında elektrik altyapısı, taahhüt, tesisat ve yüksek güvenlikli IP kamera sistemi anahtar teslim tamamlandı. Yapay zeka destekli görüntüleme, 60 m gece görüşlü ve IP67 korumalı HIKVISION kameralar ile 4K NVR kayıt sistemi uygulandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D5622AQFhKFQVrDaDjA/feedshare-shrink_800/B56ZcdnpKzHoAg-/0/1748548622399?e=1778716800&v=beta&t=V8plbTHeroA0V3mFbfP-8h7frYSCasd78um_eicHgYw',
+    ],
+    year: '2025',
+  },
+  {
+    id: 14,
+    title: 'Brownies Food & Co. – Tanıtım Ofisi Elektrik Projesi',
+    category: 'Ticari / Gıda',
+    location: 'Kemalpaşa, İzmir',
+    description: 'Türkiye\'nin lider brownie üreticisi Brownies Food & Co.\'nun Kemalpaşa\'daki Tanıtım Ofisi\'nde kuvvetli ve zayıf akım sistemleri, aydınlatma altyapısı ve iç mekân tasarımına entegre elektrik çözümleri anahtar teslim tamamlandı. Firmayla sürdürülen güçlü iş birliğinin devamı niteliğindedir.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQH4dU7Vlqv1Bg/feedshare-shrink_800/B4DZam7MpHHwAo-/0/1746557261689?e=1778716800&v=beta&t=mdarKUY47fhdyPCLbssvS08G8zdMDQmuiI81eB5E0l0',
+    ],
+    year: '2025',
+  },
+  {
+    id: 15,
+    title: 'Eryem Sanayi – Yem Üretim Fabrikası Elektrik Projesi',
+    category: 'Tarım / Endüstriyel',
+    location: 'İzmir',
+    description: 'Eryem Sanayi ve Ticaret A.Ş.\'nin yem üretim fabrikasında mühendislik ve projelendirme, kuvvetli ve zayıf akım sistemleri uygulaması, saha montajı ve devreye alma işlemleri yüksek kalite standartlarında anahtar teslim tamamlandı. Hayvancılık sektörünün sürdürülebilir üretim hedeflerine teknik destek sağlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQEcJOIrCYGgUg/feedshare-shrink_800/B4DZamyeTxHwAg-/0/1746554975036?e=1778716800&v=beta&t=gIYnO5Qf_kBhPoTnxGp_yZn0nh9RyS-e80S1ZdJCP7U',
+    ],
+    year: '2025',
+  },
+  {
+    id: 16,
+    title: 'Bağyurdu Organize Sanayi Bölgesi – Topraklama Sistemi',
+    category: 'Endüstriyel',
+    location: 'Bağyurdu OSB, İzmir',
+    description: 'Bağyurdu Organize Sanayi Bölgesi\'nde İSG standartlarına tam uyumlu topraklama sistemi kurulumu gerçekleştirildi. Topraklama hatlarının titizlikle montajı, ölçüm ve devreye alma işlemleri mühendislik disiplini ve iş güvenliği öncelikleriyle tamamlandı.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQG8hWzrbnKqzA/feedshare-shrink_800/B4DZV.ihZSGkAg-/0/1741584736832?e=1778716800&v=beta&t=5UmITpvLESFwwMVCBj68pPk_LWGKtCjKKJR7-9vBU-Q',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFRSVtNp1TM5w/feedshare-shrink_2048_1536/B4DZV.ihdeHYAo-/0/1741584737152?e=1778716800&v=beta&t=i1X8Rcmb48FLWzpdrD-haNLM95Zft47WuYx-0m3XNFw',
+      'https://media.licdn.com/dms/image/v2/D4D22AQHqlczdtw71jA/feedshare-shrink_800/B4DZV.ihdYHYAg-/0/1741584737476?e=1778716800&v=beta&t=bCgy8cqaT96c8j50DMJ9CRBE_OaM9uqNJGKxB5NYB3I',
+      'https://media.licdn.com/dms/image/v2/D4D22AQG7_3U4Grz-Ug/feedshare-shrink_800/B4DZV.ihaAHAAk-/0/1741584737452?e=1778716800&v=beta&t=DuAc0d8vgCqaDKCGh68McqGMvOn5PeAPHkEqhwyiWsk',
+    ],
+    year: '2025',
+  },
 ];
