@@ -209,4 +209,37 @@ export const projects: Project[] = [
     ],
     year: '2025',
   },
+  {
+    id: 17,
+    title: 'Urla Şantiyesi – Saha Ekibi ve Elektrik Uygulamaları',
+    category: 'Kamu / Savunma',
+    location: 'Urla, İzmir',
+    description: 'Urla\'daki şantiyemizde her biri alanında uzman ekibimizle pano bağlantıları, kablo tesisatı ve elektrik uygulamaları yüksek iş güvenliği standartlarında yürütüldü. Her bağlantı, her pano ve her kablo; ekip çalışmasının ve özverinin somut yansımasıdır.',
+    images: [
+      'https://media.licdn.com/dms/image/v2/D4D22AQGHlif9RjNHig/feedshare-shrink_800/B4DZnSWYg6GsAg-/0/1760170720080?e=1778716800&v=beta&t=Ec-0N0BP1LWAdjUIHrEFCRpSTpE7FqZLX85qVnn-ujc',
+    ],
+    year: '2025',
+  },
+  {
+    id: 18,
+    title: 'Urla Özel Villa – Elektrik Tesisat Projesi',
+    category: 'Konut',
+    location: 'Urla, İzmir',
+    description: 'Urla\'da hayata geçirilen özel villa projesinin elektrik tesisatı; akıllı ev sistemleri, güvenli altyapı ve estetik entegrasyon gözetilerek titizlikle yürütüldü. Proje sözleşmeli gizlilik kapsamında tamamlanmış olup konfor, güvenlik ve mühendislik kalitesini bir arada sunan modern yaşam alanı elektrik altyapısını kapsamaktadır.',
+    images: [
+      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=500&fit=crop&auto=format&fm=webp',
+    ],
+    year: '2025',
+  },
+  {
+    id: 19,
+    title: 'Ekmas Group – Karşıyaka Satış Ofisi Elektrik Projesi',
+    category: 'Ticari',
+    location: 'Karşıyaka, İzmir',
+    description: 'İzmir Karşıyaka\'da Ekmas Group Satış Ofisi\'nin elektrik tesisat imalatı ve devreye alma süreçleri 7 iş günü gibi kısa sürede tamamlandı. Elektrik taahhüdü, tesisat imalatı, test ve devreye alma işlemleri mühendislik bilgisi ve uzman kadroyla eksiksiz hayata geçirildi.',
+    images: [
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=500&fit=crop&auto=format&fm=webp',
+    ],
+    year: '2025',
+  },
 ];
