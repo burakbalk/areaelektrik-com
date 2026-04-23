@@ -32,7 +32,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2" aria-label="Area Elektrik - Ana Sayfa">
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Area Elektrik Logo"
               className="h-10 md:h-12 w-auto"
               width="220"

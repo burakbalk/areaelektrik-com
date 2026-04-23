@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <div className="mb-4 md:mb-6">
               <img
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Area Elektrik Logo"
                 className="h-10 md:h-12 w-auto brightness-0 invert"
                 width="220"
