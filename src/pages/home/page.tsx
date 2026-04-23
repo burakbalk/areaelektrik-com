@@ -391,28 +391,213 @@ export default function HomePage() {
 
           {/* Article Groups */}
           <div className="space-y-10">
+            {/* ── Group 1 ── */}
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
+                İzmir Elektrik Taahhüt ve Mühendislik Çözümleri
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {{
+                    title: `Kapsamlı Hizmet Portföyümüz`,
+                    body: `15 yılı aşkın saha deneyimiyle <strong>İzmir elektrik taahhüt</strong> sektöründe konuttan endüstriyel tesise, hastaneden organize sanayi bölgesine kadar her ölçekte proje üstleniyoruz. Güçlü akım tesisatı, OG/AG sistemleri, KNX otomasyon, exproof altyapı ve zayıf akım sistemleri tek çatı altında sunuluyor. 88 kişilik uzman kadromuz ve 750'yi aşkın referans projemizle İzmir'in en köklü <strong>elektrik mühendisliği</strong> firmalarından biriyiz.`,
+                    icon: 'ri-flashlight-line',
+                  }},
+                  {{
+                    title: `Neden Area Elektrik?`,
+                    body: `İzmir'in yerel dinamiklerini yakından tanıyan bir firma olarak TEDAŞ bağlantı süreçlerinden belediye proje onaylarına, OSB elektrik altyapısından MSB projelerine kadar her bürokratik ve teknik aşamayı tecrübeyle yönetiyoruz. TSE sertifikalı malzeme kullanımı, TS EN standartlarına tam uyum ve şeffaf teklif süreci, müşterilerimizin bize defalarca geri dönmesinin temel nedenidir. <strong>İzmir elektrik proje</strong> ihtiyaçlarınızda yanınızdayız.`,
+                    icon: 'ri-shield-star-line',
+                  }},
+                  {{
+                    title: `Proje Sürecimiz Nasıl İşler?`,
+                    body: `Sizi ilk kez aradığınızda uzman mühendisimiz ücretsiz ön keşif için en kısa sürede sahaya gider; yapının fiziksel koşullarını, yük ihtiyacını ve mevzuat gerekliliklerini değerlendirir. Akabinde kalem kalem hazırlanmış, sürpriz maliyet içermeyen bir teklif sunulur. Onay sonrası proje çizimleri, malzeme temini, kademeli saha uygulaması ve nihai devreye alma testleri, tek bir proje yöneticisinin sorumluluğunda yürütülür.`,
+                    icon: 'ri-road-map-line',
+                  }},
+                ].map((item, i) => (
+                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
+                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* ── Group 2 ── */}
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
+                İzmir'de Elektrik Projesi Yaptırmak İçin areaelektrik.com Güvenilir Mi?
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {{
+                    title: `15 Yıllık Saha Deneyimi ve Kanıtlanmış Referanslar`,
+                    body: `Güven, sözden değil sahayla ölçülür. Area Elektrik olarak 2010'dan bu yana <strong>İzmir elektrik firmaları</strong> arasında fark yaratan 750'nin üzerinde projeyi başarıyla tamamladık. Bu projeler arasında Millî Savunma Bakanlığı'na bağlı tesisler, İzmir Organize Sanayi Bölgeleri ve büyük ölçekli ticari yapılar yer almaktadır. Her proje zamanında, bütçe dahilinde ve teknik şartnameye uygun teslim edilmiştir.`,
+                    icon: 'ri-award-line',
+                  }},
+                  {{
+                    title: `Belge, Sertifikasyon ve Teknik Altyapı`,
+                    body: `Firmamız; Elektrik Mühendisleri Odası kayıtlı mühendisler, Yapı Denetim onaylı sertifikalar ve TEDAŞ yetki belgeleriyle faaliyet göstermektedir. KNX sertifikalı mühendis kadromuz, exproof sistem uzmanlığımız ve akredite ölçüm ekipmanlarımız teknik yetkinliğimizin somut göstergesidir. Mahkeme ve sigorta süreçlerinde geçerli as-built çizimler ve test raporları her projede standart teslim kapsamına dahildir.`,
+                    icon: 'ri-file-certificate-line',
+                  }},
+                  {{
+                    title: `Müşteri Memnuniyeti ve Uzun Vadeli Destek`,
+                    body: `İzmir'in yerel firması olarak müşterilerimizle "iş bitti, vedalaştık" ilişkisi kurmuyoruz. Projeyi teslim ettiğimizde asıl ilişki başlar: periyodik bakım anlaşmaları, arıza anında hızlı müdahale ve sistem genişletme ihtiyaçlarında teknik danışmanlık sunuyoruz. Referans listemizdeki firmaların büyük çoğunluğu 5 yılı aşkın süredir bizimle çalışmaya devam etmektedir. Bizi arayın; farkı kendiniz görün.`,
+                    icon: 'ri-customer-service-2-line',
+                  }},
+                ].map((item, i) => (
+                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
+                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* ── Group 3 ── */}
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
+                İzmir Trafo Bakımı ve OG İşletme Sorumluluğu (2026)
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {{
+                    title: `Yasal Zorunluluklar ve EPDK Uyumu`,
+                    body: `Orta gerilim tesislerinin işletilmesi; EPDK lisanslama koşulları, TS EN 61936-1 standardı ve TEDAŞ bağlantı yönetmelikleri çerçevesinde ciddi yasal sorumluluklar doğurur. <strong>İzmir trafo bakımı</strong> yükümlülüklerini yerine getirmeyen işletmeler; EPDK idari yaptırımı, sigorta kapsamı kaybı ve iş güvenliği soruşturması riskiyle karşı karşıya kalır. Area Elektrik, bu yükümlülüklerin tamamını periyodik bakım sözleşmeleriyle usulüne uygun yönetir.`,
+                    icon: 'ri-government-line',
+                  }},
+                  {{
+                    title: `Trafo Merkezi Tasarımı ve Periyodik Bakım`,
+                    body: `OG trafo merkezi tasarımında kısa devre hesabı, TS EN 61439-1/2 uyumlu pano seçimi, seçici koruma koordinasyonu ve TS EN 50522 kapsamlı topraklama boyutlandırması bütünleşik bir süreç olarak ele alınır. Periyodik bakım ziyaretlerinde trafo yağ analizi, termal kamera taraması, koruma rölesi testleri ve topraklama empedansı ölçümleri standart kapsama dahildir. Tüm sonuçlar karşılaştırmalı trend raporu olarak sunulur.`,
+                    icon: 'ri-flashlight-fill',
+                  }},
+                  {{
+                    title: `Area Elektrik'in OG Yaklaşımı`,
+                    body: `İzmir ve Ege Bölgesi'ndeki sanayi tesislerinde OG altyapı deneyimimiz, bir bakım firmasının çok ötesine geçmektedir. Yük akış analizinden koruma rölesi koordinasyonuna, SCADA uyumlu RMU seçiminden devreye alma testlerine kadar her aşama belgelenmiş proje dosyasıyla teslim edilir. Mevcut OG sisteminizin yasal uygunluğunu ve teknik sağlığını ücretsiz değerlendirmek için bizimle iletişime geçin.`,
+                    icon: 'ri-shield-star-line',
+                  }},
+                ].map((item, i) => (
+                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
+                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* ── Group 4 ── */}
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
+                İzmir Akıllı Ev ve KNX Otomasyon Sistemleri
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {{
+                    title: `KNX Protokolü: Açık Standart, Uzun Vadeli Yatırım`,
+                    body: `ISO/IEC 14543-3 ile tanımlanmış KNX protokolü; 500'den fazla üreticinin 75.000'i aşkın sertifikalı cihazını aynı veri yolu üzerinde buluşturur. Kapalı marka sistemlerinin aksine KNX, teknolojiyi değiştirsen de altyapını koruyan açık bir standarttır. <strong>İzmir akıllı ev</strong> projelerinde villa, rezidans ve otel uygulamalarında BEP-TR enerji performansı hedeflerini karşılarken %30'a varan ısıtma-soğutma tasarrufu sağlanmaktadır.`,
+                    icon: 'ri-home-gear-line',
+                  }},
+                  {{
+                    title: `ETS Programlama ve Profesyonel Komisyonlama`,
+                    body: `KNX sistemin gerçek kalitesi, ETS yazılımındaki programlama disiplinine bağlıdır. Area Elektrik'te KNX sertifikalı mühendisler; grup adres yapısını, sahne senaryolarını ve HVAC entegrasyonunu sistematik test protokolleriyle devreye alır. Her data point belgelenir, ETS yedek dosyası müşteriye teslim edilir. Yanlış komisyonlama; aydınlatma, güvenlik ve enerji yönetimi senaryolarının beklenmedik çalışmasına yol açar — bunu bilen bir kadro önünüzde.`,
+                    icon: 'ri-settings-4-line',
+                  }},
+                  {{
+                    title: `Kurulum Sonrası Destek ve Genişletilebilirlik`,
+                    body: `KNX'in en büyük avantajlarından biri modüler yapısıdır: binanın ilerleyen yıllarda geçireceği fonksiyon değişikliklerine fiziksel yeniden kablolama olmaksızın uyum sağlar. Area Elektrik, devreye alma sonrasında senaryo güncellemeleri, yeni cihaz entegrasyonu ve uzaktan izleme hizmetlerini uzun vadeli teknik destek paketi kapsamında sunmaktadır. İzmir ve Ege Bölgesi genelinde aktif servis ağımızla yanınızdayız.`,
+                    icon: 'ri-customer-service-2-line',
+                  }},
+                ].map((item, i) => (
+                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
+                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* ── Group 5 ── */}
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
+                İzmir Exproof Sistem Tasarımı ve Uygulama Firmaları
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {{
+                    title: `Saha Sınıflandırması ve Risk Analizi`,
+                    body: `Patlayıcı ortam riski taşıyan tesislerde IEC 60079-10-1 (gazlar) ve IEC 60079-10-2 (yanıcı tozlar) standartlarına göre tehlikeli alan sınıflandırması yapılmadan elektrik tasarımına başlamak, hem yasal hem teknik açıdan kabul edilemez. İzmir'deki kimya, boya, gıda ve petrokimya tesislerinde Zone 0/1/2 sınırlarının yanlış belirlenmesi; ATEX denetimlerinde ağır yaptırımlara zemin hazırlar. Sınıflandırma çizimleri sigorta ve iş güvenliği denetimlerinde birincil belgedir.`,
+                    icon: 'ri-alert-line',
+                  }},
+                  {{
+                    title: `ATEX Direktifi Uyumu ve Ekipman Seçimi`,
+                    body: `ATEX 2014/34/EU direktifi ve TS EN 60079 serisi; patlama korumalı ekipmanların kategori, işaretleme ve teknik gerekliliklerini tanımlar. Koruma konsepti seçimi (Ex d, Ex e, Ex ia, Ex n) saha sınıfına göre titizlikle yapılmalı; IECEx veya ATEX belgeli ekipman kullanımı zorunludur. Kablo geçiş rekorları ve bağlantı kutuları dahil tüm sistem bütünsel uygunluk kapsamında değerlendirilir. Area Elektrik teknik şartnameyi hazırlar, tedarik sürecini yönetir.`,
+                    icon: 'ri-tools-line',
+                  }},
+                  {{
+                    title: `Periyodik Denetim Hazırlığı ve Dokümantasyon`,
+                    body: `TS EN 60079-17 gereği exproof tesisatların belirli aralıklarla detaylı kontrolü zorunludur. Area Elektrik, ilk kurulumdan periyodik denetim yönetimine kadar tüm süreci üstlenmektedir. İş güvenliği müfettişliği denetimine hazırlıklı olmak için tesisinizdeki exproof altyapıyı önceden değerlendiriyor, eksiklikleri tamamlıyor ve yasal formatta denetim raporlarını düzenliyoruz. <strong>İzmir elektrik mühendisliği</strong> alanında uzman desteğe hemen ulaşın.`,
+                    icon: 'ri-shield-check-line',
+                  }},
+                ].map((item, i) => (
+                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
+                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             {/* ── Group 6 ── */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                İzmir Sanayi Tesisleri İçin Trafo ve OG İşletme Sorumluluğu
+                İzmir Elektrik Taahhüt Fiyatları (2026 Güncel)
               </h2>
               <div className="space-y-4">
                 {[
-                  {
-                    title: 'OG Tesislerinde Yasal Zorunluluklar',
-                    body: `Orta gerilim tesislerinin işletilmesi; EPDK lisanslama koşulları, TEDAŞ bağlantı ve sistem kullanım yönetmelikleri ile TS EN 61936-1 standardının birlikte uygulanmasını zorunlu kılar. Türkiye'de 1 kV üzerindeki trafo ve şalt tesislerini işleten her işletme, TEDAŞ bölge müdürlüğünden alınmış bağlantı anlaşmasına ve yetkili elektrik mühendisi gözetiminde hazırlanmış işletme talimatnamelerine sahip olmak zorundadır. Bu yükümlülüklerin karşılanmaması; EPDK idari yaptırımlarının yanı sıra bağlantı kesintisi ve iş güvenliği soruşturmasına zemin hazırlar.`,
-                    icon: 'ri-government-line',
-                  },
-                  {
-                    title: 'Trafo Merkezi Tasarımı ve Mühendislik Süreci',
-                    body: `OG trafo merkezi tasarımı; TS EN 61439-1 ve TS EN 61439-2 uyumlu pano seçimi, kısa devre ve yük akımı hesapları, seçici koruma rölesi koordinasyonu ve TS EN 50522 kapsamlı topraklama sistemi boyutlandırmasından oluşan bütünleşik bir mühendislik sürecidir. Trafo gücünün yanlış hesaplanması ya da koruma koordinasyonunun eksik yapılması; kaskad arızalara, uzun süreli üretim duraksamalarına ve ağır ekipman hasarlarına yol açar. Her tasarım adımı, ölçüm ve doğrulama prosedürleriyle belgelenerek teslim edilmelidir.`,
-                    icon: 'ri-flashlight-fill',
-                  },
-                  {
-                    title: 'Area Elektrik Mühendislik Yaklaşımı',
-                    body: `Area Elektrik; İzmir ve Ege Bölgesi genelinde OG trafo merkezi anahtar teslim kurulum, devreye alma, periyodik bakım ve mevzuata uygun işletme sorumluluğu hizmetlerini tek çatı altında sunmaktadır. Trafo yağ analizi, koruma röle testleri, termal kamera taraması ve topraklama empedansı ölçümü her bakım ziyaretinin standart bileşenleridir. OG altyapınızın mevcut durumunu ve yasal uygunluğunu değerlendirmek için ücretsiz teknik keşif talebinde bulunun.`,
-                    icon: 'ri-shield-star-line',
-                  },
+                  {{
+                    title: `Fiyatı Belirleyen Temel Faktörler`,
+                    body: `<strong>İzmir elektrik taahhüt fiyatları</strong>; projenin ölçeği, kablaj uzunluğu ve güzergâhı, pano karmaşıklığı, malzeme sınıfı, OG/AG ayrımı ve ek sistem gereksinimleri gibi onlarca değişkene bağlıdır. 2026 itibarıyla bakır fiyatları ve işçilik maliyetlerindeki dalgalanmalar fiyat aralıklarını direkt etkiliyor. Bu nedenle internet üzerindeki genel fiyat listelerine değil, projenize özel saha keşfine ve şeffaf teklif sürecine güvenmeniz gerekir.`,
+                    icon: 'ri-price-tag-3-line',
+                  }},
+                  {{
+                    title: `Şeffaf Teklif Sürecimiz`,
+                    body: `Area Elektrik olarak her teklifi kalem kalem hazırlıyor; malzeme, işçilik, nakliye ve proje yönetimi kalemlerini ayrı ayrı raporluyoruz. Sözleşme imzalandıktan sonra ortaya çıkan revizyon ihtiyaçları, başından belirlenen değişiklik yönetim protokolüyle şeffaf biçimde ele alınır. Müşterilerimizden en sık duyduğumuz yorum: "Baştan söylenenle sonuçta ödenen aynıydı." Bu güveni kurmak bizim için her projenin temel hedefidir.`,
+                    icon: 'ri-file-list-3-line',
+                  }},
+                  {{
+                    title: `Ücretsiz Keşif ve Maliyet Değerlendirmesi`,
+                    body: `Projenizin ne kadara geleceğini tahmin etmek için önce sahayı görmemiz gerekiyor. Uzman mühendisimiz ücretsiz keşif randevusunda yapıyı değerlendirir, mevcut altyapıyı inceler ve kullanım amacına göre en uygun teknik çözümü belirler. Keşif sonrasında sunulan detaylı teklif size karar vermek için gereken tüm bilgiyi sağlar — herhangi bir yükümlülük doğurmadan. WhatsApp veya telefon ile birkaç dakikada süreci başlatabilirsiniz.`,
+                    icon: 'ri-search-line',
+                  }},
                 ].map((item, i) => (
                   <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
                     <div className="flex items-start gap-4">
@@ -421,36 +606,35 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
             {/* ── Group 7 ── */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                Konut ve Ticari Projelerde Elektrik Taahhüt ve Proje Yönetimi
+                İzmir Zayıf Akım ve Güvenlik Sistemlerinde Hangi Alanlarda Hizmet Veriyoruz?
               </h2>
               <div className="space-y-4">
                 {[
-                  {
-                    title: 'Proje Yönetim Aşamaları',
-                    body: `Elektrik taahhüdü, yapı ruhsatından iskan iznine uzanan süreçte birbirini izleyen aşamaları kapsar: keşif ve yük analizi, elektrik projesinin hazırlanması, malzeme temini ve kalite kontrolü, kademeli saha montajı, bağımsız ölçüm ve kontroller, devreye alma ve müşteri kabul testleri. İzmir'de yürütülen büyük konut sitesi, karma kullanım ve ticari yapı projelerinde her aşamanın zamanında ve doğru teslim edilmesi; yapı denetimi onay süreçlerini hızlandırır ve sonraki aşamalar için kritik önem taşır.`,
-                    icon: 'ri-building-line',
-                  },
-                  {
-                    title: 'TS HD 60364 Uyumu',
-                    body: `Türkiye'de elektrik iç tesislerinin tasarım ve kurulumunda IEC 60364 ve TS HD 60364 serisi esas standart olarak uygulanır. Bu standart serisi; devre tasarımı, kablo seçimi, koruma koordinasyonu, topraklama ve doğrulama testlerini sistematik biçimde tanımlar. Standartlara uygun hazırlanan hesap raporları, proje çizimleri ve as-built belgeler; yapı denetim müellifliğinde, sigorta değerlendirmelerinde ve olası hukuki süreçlerde belge gücü taşır.`,
-                    icon: 'ri-file-list-3-line',
-                  },
-                  {
-                    title: 'Anahtar Teslim Uygulama Çözümleri',
-                    body: `Area Elektrik, ön fizibilite keşifinden nihai devreye almaya kadar tüm elektrik taahhüt sürecini tek elden yönetmekte; müteahhit ve proje yöneticilerinin koordinasyon yükünü minimize etmektedir. TSE belgeli sertifikalı malzeme kullanımı, zamanında teslimat taahhüdü ve eksiksiz teknik dokümantasyon standart hizmet kapsamımızdadır. Projeniz için ücretsiz keşif ve detaylı teklif almak üzere bugün iletişime geçin.`,
-                    icon: 'ri-checkbox-circle-line',
-                  },
+                  {{
+                    title: `IP Kamera, Yangın Alarm ve Erişim Kontrol Sistemleri`,
+                    body: `<strong>İzmir zayıf akım sistemleri</strong> alanında IP kamera, yangın alarm, kartlı geçiş, interkom ve IP santral sistemlerinin tasarım, kurulum ve bakımını üstleniyoruz. Yangın alarm sistemleri TS EN 54 serisi ve Binaların Yangından Korunması Hakkında Yönetmelik'e uygun tasarlanır; adreslenebilir loop yapısı sayesinde alarm kaynağı saniyeler içinde tespit edilir. Kamera sistemleri 4K çözünürlük, yapay zekâ analitiği ve PoE+ altyapısıyla mühendislik disiplininde kurulur.`,
+                    icon: 'ri-camera-line',
+                  }},
+                  {{
+                    title: `Bütünleşik Güvenlik ve Busbar Altyapısı`,
+                    body: `Büyük projelerde kamera, yangın alarm ve erişim sistemlerinin tek platformda yönetilmesi; operasyonel maliyet ve müdahale süresi açısından önemli avantajlar sağlar. Area Elektrik bu bütünleşik güvenlik altyapısını BACnet/Modbus veya IP tabanlı protokollerle bina otomasyon sistemlerine entegre eder. Busbar dukt sistemlerinde ise IEC 61439-6 uyumlu tasarım; yüksek akım kapasitesi, modüler esneklik ve düşük toplam sahip olma maliyetiyle geleneksel kablo çözümlerine belirgin üstünlük sağlar.`,
+                    icon: 'ri-shield-line',
+                  }},
+                  {{
+                    title: `Uzaktan Sayaç Okuma, Jeneratör ve UPS Sistemleri`,
+                    body: `AMR/AMI tabanlı uzaktan sayaç okuma sistemleri; tüketim analizi, hat kayıp-kaçak tespiti ve ISO 50001 enerji veri toplama yükümlülüklerini karşılar. Jeneratör ve UPS projelerinde güç analizi, ATS entegrasyonu ve IEC 62040-3 kapsamlı load bank testleri standart devreye alma protokolümüze dahildir. İzmir genelinde veri merkezi, hastane ve üretim tesisleri bu sistemleri Area Elektrik güvencesiyle işletmektedir.`,
+                    icon: 'ri-battery-charge-line',
+                  }},
                 ].map((item, i) => (
                   <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
                     <div className="flex items-start gap-4">
@@ -459,36 +643,35 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
             {/* ── Group 8 ── */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                Tehlikeli Alanlarda Güvenlik: Exproof Sistemler Projelendirme
+                İzmir Elektrik Arıza ve Periyodik Bakım Firmaları
               </h2>
               <div className="space-y-4">
                 {[
-                  {
-                    title: 'Saha Sınıflandırması ve Risk Analizi',
-                    body: `Patlayıcı atmosfer oluşturabilecek tesislerde elektrik altyapısının ilk adımı; IEC 60079-10-1 (gazlar) ve IEC 60079-10-2 (yanıcı tozlar) standartları doğrultusunda gerçekleştirilen tehlikeli alan sınıflandırmasıdır. İzmir'deki kimya, boya, gıda ve petrokimya tesislerinde Bölge 0, 1, 2 ile Bölge 20, 21, 22 sınırlarının yanlış belirlenmesi; yetersiz koruma önlemlerine ve ATEX denetimlerinde ciddi yaptırımlara yol açar. Sınıflandırma çizimleri, sigorta şirketleri ve iş güvenliği denetimlerinde aranan birincil belgelerdir.`,
-                    icon: 'ri-alert-line',
-                  },
-                  {
-                    title: 'ATEX Direktifi ve Ekipman Seçimi',
-                    body: `ATEX 2014/34/EU direktifi ve TS EN 60079 serisi; patlama korumalı ekipmanların kategori, sertifikasyon işaretlemesi ve teknik gerekliliklerini tanımlar. Koruma konsepti seçimi (Ex d, Ex e, Ex ia, Ex n) saha sınıfına göre titizlikle yapılmalı; ekipmanların IECEx veya ATEX belgesine sahip olması zorunludur. Kablo geçiş bağlantı kutularının ve kablo rekorlarının da aynı sertifikasyon kapsamında seçilmesi, sistemin bütünsel uygunluğunu garanti altına alır.`,
-                    icon: 'ri-tools-line',
-                  },
-                  {
-                    title: 'Periyodik Denetim Hazırlığı',
-                    body: `TS EN 60079-17 standardı; devredeki exproof ekipmanların belirli aralıklarla detaylı görsel ve işlevsel kontrole tabi tutulmasını zorunlu kılar. Area Elektrik, ilk kurulumdan periyodik denetim yönetimine kadar tüm süreci üstlenmekte; denetim raporlarını yasal formatta düzenlemektedir. İş güvenliği müfettişliği denetimlerine hazırlıklı olmak için tesisinizdeki exproof altyapıyı ücretsiz değerlendirmemize başvurun.`,
-                    icon: 'ri-shield-check-line',
-                  },
+                  {{
+                    title: `Yasal Periyodik Bakım Yükümlülükleri`,
+                    body: `6331 sayılı İSG Kanunu, TS HD 60364-6 ve Elektrik Kuvvetli Akım Tesisleri Yönetmeliği; işverenler için yıllık periyodik elektrik kontrol yükümlülüğü oluşturur. <strong>İzmir elektrik firmaları</strong> arasında bu yükümlülüğü yasal formatta belgeleyen nitelikli firma sayısı sınırlıdır. Area Elektrik, periyodik kontrol hizmetlerini akredite ekipmanlar ve imzalı teknik raporlarla yürütmekte; OSGB ve İş Güvenliği Müfettişliği denetimlerine karşı işletmenizi tam güvence altına almaktadır.`,
+                    icon: 'ri-file-warning-line',
+                  }},
+                  {{
+                    title: `Topraklama, Termografi ve Ölçüm Hizmetleri`,
+                    body: `Periyodik bakımın teknik özü; TS EN 61557 uyumlu cihazlarla gerçekleştirilen yalıtım direnci (megger), topraklama empedansı, döngü impedansı ve RCD fonksiyon testlerinden oluşur. Termal kamera taraması; konnektör gevşekliği, aşırı yüklü kesitler ve arızalı sigorta yataklarını yük altında ve devre dışı bırakmadan saptar. Bu yöntem arızayı beklemeyi değil, arızayı önceden görmeyi mümkün kılar. Akredite kalibrasyona sahip cihazlarla alınan sonuçlar hukuken geçerlidir.`,
+                    icon: 'ri-search-eye-line',
+                  }},
+                  {{
+                    title: `Acil Müdahale ve Teknik Raporlama`,
+                    body: `İzmir'in yerel firması olarak arıza anında bekleme süresini minimize ediyoruz; kritik bulgular için aynı gün müdahale protokolümüz devrededir. Her periyodik bakım; ölçüm sonuçları, standart eşik değerleriyle karşılaştırma, risk öncelik matrisi ve aksiyon önerilerini kapsayan kapsamlı teknik raporla belgelenir. Arşivlenen raporlar, ilerleyen dönemlerde karşılaştırmalı trend analizi yaparak olası arızaları önceden tahmin etmeye olanak tanır.`,
+                    icon: 'ri-alarm-warning-line',
+                  }},
                 ].map((item, i) => (
                   <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
                     <div className="flex items-start gap-4">
@@ -497,36 +680,35 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
             {/* ── Group 9 ── */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                Modern Yapılarda Konfor: KNX Akıllı Ev ve Bina Otomasyonu
+                Profesyonel Elektrik Proje Onay Süreci Ne Kadar Sürer?
               </h2>
               <div className="space-y-4">
                 {[
-                  {
-                    title: 'KNX Protokol Avantajları',
-                    body: `KNX, ISO/IEC 14543-3 ile tanımlanmış ve 50'den fazla ülkede standart kabul görmüş tek açık bina otomasyon protokolüdür. Kapalı marka sistemlerinin aksine KNX; 500'den fazla üreticinin 75.000'i aşkın sertifikalı cihazını aynı veri yolu üzerinde çalıştırabilir. Ege Bölgesi'nde gerçekleştirilen rezidans, otel ve ofis projelerinde KNX; kullanıcıya teknoloji bağımsızlığı ve uzun vadeli yatırım güvencesi sağlarken BEP-TR (Binalarda Enerji Performansı Yönetmeliği) kapsamında enerji verimliliği hedeflerinin gerçekleştirilmesinde doğrudan belirleyici rol oynar.`,
-                    icon: 'ri-home-gear-line',
-                  },
-                  {
-                    title: 'ETS Programlama ve Komisyonlama',
-                    body: `KNX sistemin sahada hayata geçirilmesi; ETS (Engineering Tool Software) yazılımında cihaz adreslemenin, grup nesnelerinin ve kullanıcı senaryolarının eksiksiz tanımlanmasını gerektirir. Programlama hataları; aydınlatma, ısıtma ve güvenlik senaryolarının beklenmedik biçimde çalışmasına yol açar. Bu nedenle komisyonlama adım adım doğrulama protokolüyle yürütülmeli, her grup nesnesinin işlevsel testi belgelenmeli; Area Elektrik bu süreci KNX sertifikalı mühendisler eliyle yönetmektedir.`,
-                    icon: 'ri-settings-4-line',
-                  },
-                  {
-                    title: 'Teknik Destek ve Genişletilebilirlik',
-                    body: `KNX altyapısı; binanın gelecekte geçireceği fonksiyon değişikliklerine ve teknoloji güncellemelerine fiziksel yeniden kablolama gerektirmeksizin uyum sağlar. Area Elektrik, kurulum sonrası senaryo güncellemeleri, yeni cihaz entegrasyonu ve uzaktan sistem izleme hizmetlerini uzun vadeli teknik destek paketi kapsamında sunmaktadır. Binanızın KNX otomasyon potansiyelini keşfetmek ve ücretsiz danışmanlık almak için Area Elektrik ile iletişime geçin.`,
-                    icon: 'ri-customer-service-2-line',
-                  },
+                  {{
+                    title: `Proje Hazırlık ve Onay Aşamaları`,
+                    body: `Elektrik projesi onay süreci; yük hesabı ve tek hat şeması hazırlığı, ilgili kurum onayları (belediye, TEDAŞ, yapı denetim), uygulama projesi ve as-built teslimi olmak üzere birbirini izleyen aşamalardan oluşur. Süre, yapı tipine ve büyüklüğüne göre konutlarda 2-4 hafta, endüstriyel projelerde 6-12 hafta arasında değişir. Her aşamada doğru evrak düzeni ve kurumsal iletişim, süreç gecikmelerini büyük ölçüde önler.`,
+                    icon: 'ri-time-line',
+                  }},
+                  {{
+                    title: `İzmir'de Belediye, TEDAŞ ve EPDK Süreçleri`,
+                    body: `İzmir özelinde TEDAŞ bağlantı başvuruları, İzmir Büyükşehir Belediyesi yapı ruhsatı onay akışları ve OSB elektrik altyapısı protokolleri konusundaki bilgi birikimimiz, bürokratik süreçleri hızlandırmamızı sağlar. <strong>İzmir elektrik proje</strong> başvurularında hangi belgelerin hangi kuruma, hangi formatta sunulacağını bilen bir kadro; hem zaman hem maliyet tasarrufu demektir. Kurum ilişkilerimiz onay süreçlerini sistematik biçimde takip etmemize imkân tanır.`,
+                    icon: 'ri-building-2-line',
+                  }},
+                  {{
+                    title: `Area Elektrik'in Süreç Hızlandırıcı Rolü`,
+                    body: `Çoğu firmada proje onay süreci insan hatası, eksik evrak veya kurumlar arası iletişim kopukluğundan dolayı gereğinden uzun sürer. Area Elektrik olarak her projeye atanan proje yöneticisi, kurum takiplerini, revizyon taleplerini ve ara onayları proaktif biçimde yönetir. Müşterimiz süreçle değil, sonuçla ilgilenir — bu yaklaşım 15 yıldır değişmedi. Projenizi danışmaya getirin; zaman çizelgesini birlikte oluşturalım.`,
+                    icon: 'ri-rocket-line',
+                  }},
                 ].map((item, i) => (
                   <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
                     <div className="flex items-start gap-4">
@@ -535,36 +717,35 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
             {/* ── Group 10 ── */}
             <div>
               <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                İş Yerleri İçin Güvenlik: IP Kamera ve Yangın Alarm Sistemleri
+                Doğru Elektrik Taahhüt Hizmeti ve Montajı Nasıl Olmalı?
               </h2>
               <div className="space-y-4">
                 {[
-                  {
-                    title: 'IP Kamera Sistemi Mühendisliği',
-                    body: `IP güvenlik kamera sistemi tasarımı; kamera tipi ve lens seçimi, görüş açısı ve ışık senaryosu analizi, NVR depolama kapasitesi hesabı ve ağ bant genişliği yönetimini kapsayan bütünleşik bir mühendislik sürecidir. İzmir'deki fabrika, ticaret merkezi ve lojistik tesis projelerinde 4K çözünürlüklü IP kameralar; yapay zekâ destekli video analizi (hareket algılama, kalabalık analizi, plaka okuma) ve uzaktan izleme yetenekleriyle güvenlik operasyonlarını dönüştürür. PoE+ altyapısı ile kablo güzergâhı optimizasyonu kurulum maliyetini ve bakım karmaşıklığını önemli ölçüde azaltır.`,
-                    icon: 'ri-camera-line',
-                  },
-                  {
-                    title: 'TS EN 54 Uyumu',
-                    body: `Yangın alarm sistemleri, TS EN 54 serisi (Yangın Algılama ve Alarm Sistemleri) ve Binaların Yangından Korunması Hakkında Yönetmelik kapsamında zorunlu güvenlik altyapısı olarak sınıflandırılmıştır. Adreslenebilir yangın alarm sistemi; her sensörün kimliğini ve alarm bilgisini merkezi panelde anlık olarak raporlar, bu özellik yangının kaynağını saniyeler içinde tespit etmeyi sağlar. Konvansiyonel sistemlere kıyasla adreslenebilir sistemlerin bakım maliyeti ve yanlış alarm oranı belirgin biçimde düşüktür.`,
-                    icon: 'ri-alarm-warning-line',
-                  },
-                  {
-                    title: 'Bütünleşik Güvenlik Altyapısı',
-                    body: `Kamera ve yangın alarm sistemlerinin tek proje kapsamında tasarlanması; ortak kablo güzergâhı optimizasyonu, merkezi izleme odası konsolidasyonu ve sistemler arası entegrasyon açısından önemli maliyet ile operasyonel avantajlar sağlar. Area Elektrik, as-built çizimler ve TS EN 54 uygunluk belgeleriyle anahtar teslim güvenlik altyapısı kurmaktadır. Güvenlik sistemlerinizin mevcut durumunu değerlendirmek ve ücretsiz keşif almak için bizimle iletişime geçin.`,
-                    icon: 'ri-shield-line',
-                  },
+                  {{
+                    title: `Kaliteli Montajın Teknik Kriterleri`,
+                    body: `Görünürde aynı gibi duran iki elektrik tesisatı arasındaki fark; kablo kesit hesabının doğruluğunda, gerilim düşümü sınırlarına uyumda, sigorta ve koruma elemanlarının koordinasyonunda ve topraklama sisteminin TS EN 50522'ye göre boyutlandırılmasında gizlidir. Bu hesapların eksik yapılması; ilk yıllarda değil, 5-10 yıl sonra arıza, yangın veya ekipman hasarı olarak kendini gösterir. Doğru <strong>elektrik taahhüt hizmeti</strong> bugünü değil, 20 yılı garanti altına alır.`,
+                    icon: 'ri-medal-line',
+                  }},
+                  {{
+                    title: `Malzeme Seçimi ve Standart Uyumu`,
+                    body: `Sertifikalı malzeme kullanımı hem teknik güvenliği hem de hukuki güvenceyi sağlar. Area Elektrik projelerinde TSE belgeli kablo ve iletkenler, CE işaretli pano ekipmanları ve IEC standartlarına uygun koruma cihazları tercih edilir. Ucuz ve belgésiz malzeme kullanan firmalar kısa vadede cazip görünse de sigorta tazminat süreçlerinde ve iş kazası soruşturmalarında işletmeyi korumasız bırakır. Malzeme listesini şeffaf biçimde teklif dosyasında sunuyoruz.`,
+                    icon: 'ri-checkbox-circle-line',
+                  }},
+                  {{
+                    title: `Uzun Vadeli Güvenlik ve Bakım Güvencesi`,
+                    body: `Montaj bitmesi işin bittiği değil, başladığı andır. Area Elektrik olarak kurulum sonrası periyodik bakım anlaşmaları, genişletme danışmanlığı ve arıza anında hızlı müdahale imkânı sunuyoruz. İzmir'in yerli firması olarak müşterilerimizle onlarca yıllık ilişkiler kuruyoruz; referans listemiz bunu kanıtlıyor. <strong>İzmir elektrik taahhüt</strong> hizmetinde kalıcı çözüm için doğru adrestesiniz. Ücretsiz keşif için hemen iletişime geçin.`,
+                    icon: 'ri-tools-line',
+                  }},
                 ].map((item, i) => (
                   <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
                     <div className="flex items-start gap-4">
@@ -573,121 +754,7 @@ export default function HomePage() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* ── Group 11 ── */}
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                Endüstriyel Verimlilikte Busbar Sistemleri Tasarımı
-              </h2>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: 'Busbar ve Kablolama Karşılaştırması',
-                    body: `Yüksek akım gerektiren endüstriyel tesislerde ve veri merkezlerinde güç dağıtımı için busbar dukt sistemleri; iletken kesit optimizasyonu, IP65'e kadar koruma sınıfı, modüler tap-off esnekliği ve düşük toplam sahip olma maliyeti (TCO) ile geleneksel kablo trunking çözümlerine belirgin üstünlük sağlar. IEC 61439-6 standardına uygun busbar duktlar; kısa devre dayanımı (tipik 50 kA – 1 sn) ve sınırlı sıcaklık yükselmesi kriterleri açısından endüstriyel uygulamaların güvenlik gerekliliklerini eksiksiz karşılar.`,
-                    icon: 'ri-layout-grid-line',
-                  },
-                  {
-                    title: 'Güç Hesabı ve Rota Planlama',
-                    body: `Busbar sistem tasarımının temel mühendislik adımları; tam yük ve harmonik akım analizi, sıcaklık yükselme simülasyonu, kısa devre akımı doğrulaması ve tap-off noktalarının yük merkezi analizine göre konumlandırılmasıdır. Yanlış boyutlandırılmış veya yetersiz kısa devre kapasiteli bir busbar sistemi; arıza anında tam koruma sağlayamaz ve ağır ekipman hasarlarına neden olabilir. Her tasarım adımı mühendislik hesap raporu ile belgelenmeli ve fabrika testleriyle (FAT) doğrulanmalıdır.`,
-                    icon: 'ri-bar-chart-line',
-                  },
-                  {
-                    title: 'İşletme Avantajları',
-                    body: `Area Elektrik, busbar sistemi tasarımı, tedarik, montaj ve devreye almasını anahtar teslim olarak yönetmektedir. Devreye alma sonrası periyodik termal kamera taraması ve bağlantı tork kontrolleri; ısınma ve gevşeme kaynaklı potansiyel arızaları proaktif biçimde önler. Mevcut kablo altyapınızı busbar ile modernize etmek ve üretim güvenliğinizi artırmak için ücretsiz teknik keşif talep edin.`,
-                    icon: 'ri-temp-hot-line',
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
-                    <div className="flex items-start gap-4">
-                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
-                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* ── Group 13 ── */}
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                Kesintisiz Enerji İçin Profesyonel Jeneratör ve UPS Sistemleri Kurulumu
-              </h2>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: 'Güç Analizi ve Boyutlandırma',
-                    body: `Yedek güç sistemi boyutlandırması; kritik ve kritik olmayan yüklerin sınıflandırılması, anlık ve sürekli güç hesabı, motor yol verme akım darbesi simülasyonu ve yakıt tüketim-depolama analizi gibi birbirine bağlı mühendislik hesaplarından oluşur. İzmir'de hizmet verdiğimiz hastaneler, veri merkezleri ve süreç endüstrilerinde bu hesapların eksik kalması; jeneratörün kritik anlarda kapasitesinin dışına çıkmasına, UPS akü ömrünün erken dolmasına ve tam da önlenmesi gereken anlarda kesintiye yol açar.`,
-                    icon: 'ri-battery-charge-line',
-                  },
-                  {
-                    title: 'ATS Entegrasyonu ve Senkronizasyon',
-                    body: `Otomatik transfer şalterleri (ATS), şebeke gerilimi beklenen parametreler dışına çıktığında yedek kaynağa geçişi saniyeler içinde ve insan müdahalesi gerektirmeksizin gerçekleştirir. IEC 60947-6-1 standardına uygun ATS panosu; ön transfer bekleme süresi, geri transfer koşulları ve paralel çalışma kilitleme mekanizmasını doğru biçimde yapılandırılmış olmalıdır. Çift jeneratörlü sistemlerde senkronizasyon modülü hatalı devreye alındığında faz kayması kaynaklı kısa devre ve ağır ekipman hasarı riski mevcuttur.`,
-                    icon: 'ri-repeat-line',
-                  },
-                  {
-                    title: 'Devreye Alma Protokolleri',
-                    body: `Area Elektrik, jeneratör kurulumu, ATS panosu tasarım-imalatı ve UPS entegrasyonunu kapsayan anahtar teslim projeler yürütmektedir. IEC 62040-3 kapsamında gerçekleştirilen load bank testi ve FAT/SAT protokolleri; sistemin nominal kapasitede güvenli çalışıp çalışmadığını nihai onay öncesinde doğrular. Egzoz emisyon uyumu, akustik yalıtım ve çevresel izinler proje teslim paketine dahildir. Kritik enerji altyapınız için ücretsiz keşif talep edin.`,
-                    icon: 'ri-test-tube-line',
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
-                    <div className="flex items-start gap-4">
-                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
-                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* ── Group 14 ── */}
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-6 pb-3 border-b" style={{ color: '#1a1a1a', borderColor: '#e8e0d4' }}>
-                İzmir'de Elektrik Tesisatlarında Periyodik Test, Ölçüm ve Bakım
-              </h2>
-              <div className="space-y-4">
-                {[
-                  {
-                    title: 'Yasal Denetim Kapsamı ve İş Sağlığı',
-                    body: `TS HD 60364-6 (Doğrulama), Elektrik Kuvvetli Akım Tesisleri Yönetmeliği ve 6331 sayılı İSG Kanunu; işverenler için yıllık periyodik elektrik bakım ve ölçüm yükümlülüğü oluşturmaktadır. İzmir'deki sanayi ve ticaret tesislerinde bu yükümlülüğün yerine getirilmemesi; OSGB ve İş Güvenliği Müfettişliği denetimlerinde idari para cezası, sigorta kapsamı kaybı ve iş kazasında hukuki sorumluluk riskini beraberinde getirir. Periyodik kontrol; hem yasal zorunluluk hem de reaktif bakım maliyetini düşüren proaktif bir yönetim aracıdır.`,
-                    icon: 'ri-file-warning-line',
-                  },
-                  {
-                    title: 'Topraklama ve Termografi Ölçümleri',
-                    body: `Elektrik periyodik bakımının teknik özü; TS EN 61557 uyumlu cihazlarla gerçekleştirilen yalıtım direnci testi (megger), topraklama empedansı ve döngü impedansı ölçümü, artık akım koruma (RCD) fonksiyon testi ve termal kamera taramasından oluşur. Termal görüntüleme; konnektör gevşekliği, aşırı yüklü kesitler ve arızalı sigorta yataklarını yük altında ve devre dışı bırakmadan tespit etmenin en güvenilir yöntemidir. Akredite kalibrasyona sahip cihazlarla yapılan ölçümler mahkeme ve sigorta süreçlerinde delil niteliği taşır.`,
-                    icon: 'ri-search-eye-line',
-                  },
-                  {
-                    title: 'Teknik Raporlama',
-                    body: `Area Elektrik, her periyodik bakımı; ölçüm sonuçları, standart eşik değerleriyle karşılaştırma, risk öncelik matrisi ve önerilen aksiyonları kapsayan kapsamlı teknik raporla belgelemektedir. Kritik bulgular için aynı gün acil müdahale protokolü devreye girer. Arşivlenen raporlar müteakip dönemlerde karşılaştırmalı trend analizi imkânı tanıyarak olası arızaları önceden tahmin etmeyi sağlar. Tesisatınızın güvenlik ve yasal uygunluk değerlendirmesi için ücretsiz ön denetim talep edin.`,
-                    icon: 'ri-clipboard-line',
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="rounded-2xl border p-5 md:p-6" style={{ backgroundColor: '#ffffff', borderColor: '#e8e0d4' }}>
-                    <div className="flex items-start gap-4">
-                      <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(212,184,150,0.15)' }}>
-                        <i className={`${item.icon} text-sm`} style={{ color: '#c8a96e' }} aria-hidden="true"></i>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-sm md:text-base font-bold mb-2 border-l-4 pl-3" style={{ color: '#1a1a1a', borderColor: '#d4b896' }}>{item.title}</h3>
-                        <p className="text-gray-500 leading-relaxed text-sm">{item.body}</p>
+                        <p className="text-gray-500 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: item.body }} />
                       </div>
                     </div>
                   </div>
